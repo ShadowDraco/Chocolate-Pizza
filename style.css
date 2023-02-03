@@ -71,7 +71,7 @@ hr {
 	width: 100%;
 
 	background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%223px%22%20height%3D%223px%22%20viewBox%3D%220%200%203%203%22%20fill%3D%22darkmagenta%22%3E%3Cpolygon%20points%3D%220%2C0.5%200%2C1.5%201.5%2C3%202.5%2C3%22/%3E%3Cpolygon%20points%3D%222.5%2C0%201.5%2C0%203%2C1.5%203%2C0.5%22/%3E%3C/svg%3E');
-	background-size: 6px, 6px;
+	background-size: 4px, 4px;
 	opacity: 35%;
 	filter: grayscale(100%);
 }
@@ -120,24 +120,24 @@ hr {
 	margin-left: 2px;
 }
 
+.description {
+	margin-top: 1em;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.5em;
+}
+
 .description p {
-	opacity: 55%;
+	opacity: 60%;
 	font-family: serif;
 	font-weight: 600;
+	padding: 0px;
+	margin: 2px;
 }
 
 .recipe {
 	background-image: url('./assets/list-bg.png');
 	border-bottom: 3px gray double;
-}
-
-.recipe::after {
-	content: '';
-	position: absolute;
-	top: 136.5%;
-	left: 12.2%;
-	border-bottom: 1px gray solid;
-	width: 75.5%;
 }
 
 .list {
@@ -146,6 +146,9 @@ hr {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	opacity: 70%;
+	font-weight: 500;
+	font-family: 'Times New Roman', Times, serif;
+	font-style: oblique;
 }
 
 ul {
@@ -163,4 +166,66 @@ ul li:has(input:checked) {
 input[type='checkbox'] {
 	accent-color: rgb(233, 225, 188);
 	border: 1px solid black;
+}
+
+.footer {
+	width: 100%;
+}
+
+.desc {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1em;
+}
+
+.vanessa {
+	display: flex;
+}
+
+.vanessa button {
+	margin-left: 1em;
+	background-color: rgba(255, 42, 0, 0.775);
+	width: 15em;
+	height: 3em;
+	color: white;
+	font-size: small;
+	border: none;
+}
+
+.vanessa p:first-of-type {
+	font-size: large;
+	font-family: serif;
+	font-weight: 600;
+	opacity: 80%;
+	margin-bottom: 1em;
+}
+
+.vanessa p:last-of-type {
+	margin-top: 1em
+	font-size: 0.9em;
+	opacity: 60%;
+}
+
+.copyright {
+	margin-top: 3em;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+}
+
+.copyrightText {
+	opacity: 40%;
+	margin-top: 2em;
+}
+
+.copyright li,
+p {
+	display: inline;
+	list-style: disc;
 }
