@@ -1,3 +1,166 @@
 body {
-	background-color: gray;
+	padding: 0;
+	margin: 0;
+	display: block;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+}
+
+.content-wrapper {
+	width: 75vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.navbar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.brand {
+	display: flex;
+	justify-content: left;
+}
+
+.brand img {
+	justify-self: center;
+	align-self: center;
+}
+
+.brandText {
+	margin-left: 0.5em;
+	display: flex;
+	flex-direction: column;
+	max-height: 45px;
+	justify-content: center;
+}
+
+#brandTitle {
+	font-family: 'Arizonia', fantasy, cursive;
+	font-size: 2.2em;
+	font-weight: 800;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#brandSubtitle {
+	font-family: 'monaco', sans-serif;
+	font-size: xx-small;
+	font-style: oblique;
+}
+
+.icons {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+.next {
+	margin-left: 0.5em;
+}
+
+hr {
+	margin-top: 2em;
+	height: 1em;
+	width: 100%;
+
+	background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%223px%22%20height%3D%223px%22%20viewBox%3D%220%200%203%203%22%20fill%3D%22darkmagenta%22%3E%3Cpolygon%20points%3D%220%2C0.5%200%2C1.5%201.5%2C3%202.5%2C3%22/%3E%3Cpolygon%20points%3D%222.5%2C0%201.5%2C0%203%2C1.5%203%2C0.5%22/%3E%3C/svg%3E');
+	background-size: 6px, 6px;
+	opacity: 35%;
+	filter: grayscale(100%);
+}
+
+.heading {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heading h1 {
+	font-size: xxx-large;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+.heading h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-size: small;
+	font-style: oblique;
+	font-family: 'monaco', sans-serif;
+	opacity: 30%;
+}
+
+.subheading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.print {
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+
+	font-family: 'monaco', sans-serif;
+	font-size: x-small;
+}
+
+.print p {
+	opacity: 60%;
+	margin-left: 2px;
+}
+
+.description p {
+	opacity: 55%;
+	font-family: serif;
+	font-weight: 600;
+}
+
+.recipe {
+	background-image: url('./assets/list-bg.png');
+	border-bottom: 3px gray double;
+}
+
+.recipe::after {
+	content: '';
+	position: absolute;
+	top: 136.5%;
+	left: 12.2%;
+	border-bottom: 1px gray solid;
+	width: 75.5%;
+}
+
+.list {
+	margin-left: 2em;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	opacity: 70%;
+}
+
+ul {
+	list-style-type: square;
+}
+
+ul li {
+	color: rgb(63, 56, 24);
+}
+
+ul li:has(input:checked) {
+	text-decoration: line-through;
+}
+
+input[type='checkbox'] {
+	accent-color: rgb(233, 225, 188);
+	border: 1px solid black;
 }
