@@ -19,6 +19,12 @@ body {
 
 .navbar {
 	width: 100%;
+	display: inline-block;
+}
+
+.brand {
+	width: 50%;
+	display: inline-block;
 }
 
 .brand img {
@@ -27,7 +33,8 @@ body {
 }
 
 .brandText {
-	float: left;
+	display: inline-block;
+
 	margin-left: 0.5em;
 	margin-bottom: 1.5em;
 }
@@ -53,11 +60,10 @@ body {
 }
 
 .icons {
+	display: inline-block;
+	width: 40%;
 	margin-top: 2em;
 	padding-top: 1.5em;
-	margin-left: 74.85%;
-	display: inline-block;
-	width: fit-content;
 }
 
 .icons :nth-last-child(2) {
